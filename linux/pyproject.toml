@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rooted-linux-course"
+version = "1.0.0"
+description = "A local Python application for learning Linux, networking, security, forensics and automation"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.scripts]
+rooted = "rooted.app:main"
+
+[tool.setuptools.package-data]
+rooted = ["reference.json", "static/*"]
